@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tabuleiro
+﻿namespace PastaTabuleiro
 {
-    class Tabuleiro
-    {
+     class Tabuleiro
+     {
         public int Linhas { get; set; }
         public int Colunas { get; set; }
 
@@ -16,6 +12,11 @@ namespace Tabuleiro
             Linhas = linhas;
             Colunas = colunas;
             Pecas = new Peca[linhas, colunas];
+        }
+
+        public Peca Peca(int linha, int coluna)
+        {
+            return Pecas[linha, coluna];
         }
     }
 }

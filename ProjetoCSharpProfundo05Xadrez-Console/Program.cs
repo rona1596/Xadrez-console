@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PastaTabuleiro;
+using System;
 
 namespace ProjetoCSharpProfundo05Xadrez_Console
 {
@@ -6,7 +7,11 @@ namespace ProjetoCSharpProfundo05Xadrez_Console
     {
         static void Main(string[] args)
         {
-            
+            Tabuleiro tab = new Tabuleiro(8, 8);
+
+            Tela.ImprimirTabuleiro(tab);
+
+            Console.ReadLine();
         }
     }
 }

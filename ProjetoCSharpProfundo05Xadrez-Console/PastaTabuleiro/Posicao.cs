@@ -1,4 +1,4 @@
-﻿namespace Tabuleiro
+﻿namespace PastaTabuleiro
 {
     class Posicao
     {
