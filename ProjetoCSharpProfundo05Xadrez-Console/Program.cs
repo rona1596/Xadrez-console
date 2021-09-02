@@ -1,4 +1,5 @@
 ﻿using PastaTabuleiro;
+using PecasXadrez;
 using System;
 
 namespace ProjetoCSharpProfundo05Xadrez_Console
