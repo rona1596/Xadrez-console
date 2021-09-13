@@ -1,4 +1,5 @@
-﻿using PastaTabuleiro;
+﻿
+using PastaTabuleiro;
 using System;
 
 namespace ProjetoCSharpProfundo05Xadrez_Console
@@ -10,6 +11,7 @@ namespace ProjetoCSharpProfundo05Xadrez_Console
         {
             for (int i = 0; i < tab.Linhas; i++)
             {
+                Console.Write(8 - i + " ");
                 for(int j = 0; j < tab.Colunas; j++)
                 {
                     if (tab.Peca(i, j) == null)
@@ -18,10 +20,27 @@ namespace ProjetoCSharpProfundo05Xadrez_Console
                     }
                     else
                     {
-                        Console.WriteLine(tab.Peca(i,j) + " ");
+                        Tela.imprimirPeca(tab.Peca(i, j));
+                        Console.Write(" ");
                     }
                 }
                 Console.WriteLine();
+            }
+            Console.WriteLine("  a b c d e f g h");
+        }
+
+        public static void imprimirPeca(Peca peca)
+        {
+            if(peca.Cor == Cor.Branca)
+            {
+                Console.WriteLine(peca);
+            }
+            else
+            {
+                ConsoleColor aux = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write(peca);
+                Console.ForegroundColor = aux;
             }
         }
      }
