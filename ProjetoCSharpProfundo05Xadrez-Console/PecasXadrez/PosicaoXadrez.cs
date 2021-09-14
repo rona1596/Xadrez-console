@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProjetoCSharpProfundo05Xadrez_Console.PecasXadrez
+namespace PecasXadrez
 {
     class PosicaoXadrez
     {
