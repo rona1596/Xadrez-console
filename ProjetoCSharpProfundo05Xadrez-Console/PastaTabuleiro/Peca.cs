@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PastaTabuleiro
 {
-    class Peca
+    abstract class Peca
     {
         public Posicao Posicao { get; set; }
         public Cor Cor { get; protected set; }
@@ -19,9 +19,12 @@ namespace PastaTabuleiro
             QteMovimentos = 0;
         }
 
-        public void incrementarQteMovimentos( )
+        public void incrementarMovimentos()
         {
             QteMovimentos++;
         }
+
+        //Matriz de booleano
+        public abstract bool[,] MovimentosPossiveis();
     }
 }

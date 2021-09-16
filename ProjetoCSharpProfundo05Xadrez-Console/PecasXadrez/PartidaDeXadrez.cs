@@ -24,7 +24,7 @@ namespace PecasXadrez
         public void ExecutarMovimento(Posicao origem, Posicao destino)
         {
             Peca p = Tab.RetirarPeca(origem);
-            p.incrementarQteMovimentos();
+            p.incrementarMovimentos();
             Peca pecaCapturada = Tab.RetirarPeca(destino);
             Tab.ColocarPeca(p, destino);
         }
