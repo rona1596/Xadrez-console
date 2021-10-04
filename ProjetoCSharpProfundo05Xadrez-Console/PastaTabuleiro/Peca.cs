@@ -19,9 +19,14 @@ namespace PastaTabuleiro
             QteMovimentos = 0;
         }
 
-        public void incrementarMovimentos()
+        public void IncrementarMovimentos()
         {
             QteMovimentos++;
+        }
+
+        public void DecrementarMovimentos()
+        {
+            QteMovimentos--;
         }
 
         public bool ExisteMovimentosPossiveis()
